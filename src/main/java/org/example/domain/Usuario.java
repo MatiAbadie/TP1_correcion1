@@ -1,7 +1,9 @@
 package com.tu_proyecto.domain;
 
+import java.util.UUID;
+
 public abstract class Usuario {
-    private int id;
+    private UUID id;
     private String nombre;
 
     public Usuario(int id, String nombre) {

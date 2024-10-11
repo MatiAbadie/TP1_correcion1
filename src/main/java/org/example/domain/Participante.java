@@ -2,9 +2,10 @@ package com.tu_proyecto.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Participante {
-    private int id;
+    private UUID id;
     private String nombre;
     private String apellido;
     private List<InteresCulinario> interesesCulinarios;
@@ -12,7 +13,7 @@ public class Participante {
     private List<Reseña> reseñas;
 
     public Participante(int id, String nombre, String apellido) {
-        this.id = id;
+        this.id = UUID.randomUUID();
         this.nombre = nombre;
         this.apellido = apellido;
         this.interesesCulinarios = new ArrayList<>();

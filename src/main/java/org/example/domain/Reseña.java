@@ -1,14 +1,16 @@
 package com.tu_proyecto.domain;
 
+import java.util.UUID;
+
 public class Reseña {
-    private int id;
+    private UUID id;
     private EventoGastronomico evento;
     private Participante participante;
     private int calificacion;
     private String comentario;
 
     public Reseña(int id, EventoGastronomico evento, Participante participante, int calificacion, String comentario) {
-        this.id = id;
+        this.id = UUID.randomUUID();
         this.evento = evento;
         this.participante = participante;
         this.calificacion = calificacion;

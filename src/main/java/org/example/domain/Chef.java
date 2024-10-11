@@ -2,15 +2,16 @@ package com.tu_proyecto.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Chef {
-    private int id;
+    private UUID id;
     private String nombre;
     private Especialidad especialidad;
     private List<EventoGastronomico> eventos;
 
     public Chef(int id, String nombre, Especialidad especialidad) {
-        this.id = id;
+        this.id = UUID.randomUUID();
         this.nombre = nombre;
         this.especialidad = especialidad;
         this.eventos = new ArrayList<>();

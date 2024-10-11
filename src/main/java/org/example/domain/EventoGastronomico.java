@@ -3,9 +3,10 @@ package com.tu_proyecto.domain;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 public class EventoGastronomico {
-    private int id;
+    private UUID id;
     private String nombre;
     private String descripcion;
     private Date fecha;
@@ -16,7 +17,7 @@ public class EventoGastronomico {
     private List<Participante> participantes;
 
     public EventoGastronomico(int id, String nombre, String descripcion, Date fecha, String hora, String ubicacion, int capacidad, Chef chef) {
-        this.id = id;
+        this.id = UUID.randomUUID();
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fecha = fecha;

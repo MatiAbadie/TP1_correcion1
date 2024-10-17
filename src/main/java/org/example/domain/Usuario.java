@@ -11,7 +11,7 @@ public abstract class Usuario {
         this.nombre = nombre;
     }
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 

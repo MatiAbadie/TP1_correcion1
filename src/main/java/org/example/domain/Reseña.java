@@ -24,13 +24,14 @@ public class Reseña {
     // Getters y Setters
 
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(UUID id) {
         this.id = id;
     }
+
 
     public EventoGastronomico getEvento() {
         return evento;
